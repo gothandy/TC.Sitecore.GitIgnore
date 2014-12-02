@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TC.Sitecore.GitIgnore</id>
+    <version>1.0.0.0</version>
+    <title>Sitecore - Git Ignore</title>
+    <authors>gothandy</authors>
+    <owners>gothandy</owners>
+    <licenseUrl>https://github.com/gothandy/TC.Sitecore/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/gothandy/TC.Sitecore</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/gothandy/TC.Sitecore/master/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Keeping Sitecore files out of Git.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <developmentDependency>true</developmentDependency>
+  </metadata>
+  <files>
+    <file src=".gitignore" target="content/" />
+  </files>
+</package>

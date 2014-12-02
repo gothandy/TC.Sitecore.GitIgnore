@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="TCNuGetPackAllTarget" AfterTargets="Build">
+    <Exec Command="for %%f in ($(ProjectDir)*.nuspec) do ..\packages\TC.NuGetPack.All.1.0.1.4\build\NuGet.exe pack %%f -NoDefaultExcludes" />
+    <Exec Command="for %%f in ($(ProjectDir)*.nupkg) do ..\packages\TC.NuGetPack.All.1.0.1.4\build\NuGet.exe push %%f" />
+    <Exec Command="del $(ProjectDir)*.nupkg" />
+  </Target>
+</Project>
